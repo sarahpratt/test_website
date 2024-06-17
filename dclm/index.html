@@ -43,6 +43,9 @@
               <a href="#home" class="nav__link active__link">Home</a>
             </li>
             <li class="nav__item">
+              <a href="#faqs" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
               <a href="./people.html#group" class="nav__link">Team</a>
             </li>
             <!-- <li class="nav__item">
@@ -97,10 +100,16 @@
               challenge is to find the best possible data! </p>
               
               <p class="home__desc" style="clear: left;">
-              Prior competitions in machine learning have focused on
-              finding the best model, with a fixed set of training and test data. However, many recent advances (CLIP, DALL-E, Stable Diffusion, or Flamingo)
-              are due in part to large multimodal datasets. DataComp centers the role that data plays by fixing the training code,
-              and encouraging researchers to innovate by proposing new training sets.
+                Prior competitions in machine learning have focused on finding the best model, with a fixed set 
+                of training and test data. However, many recent advances (GPT-4, Gemni, LLAMA, Mistral) are due 
+                in part to large and diverse language datasets. DataComp centers the role that data plays by fixing 
+                the training code, and encouraging researchers to innovate by proposing new training sets. We provide 
+                an experimental testbed centered around a new candidate pool of 240T tokens from Common Crawl. 
+                Participants in our benchmark design new filtering techniques or curate new data sources and then 
+                evaluate them by running our standardized language model training code followed by an evaluation on 53 
+                downstream datasets. Our benchmark consists of multiple scales, with various candidate pool sizes and 
+                associated compute budgets ranging from 412M to 7B parameters. This multi-scale design facilitates the 
+                study of scaling trends and makes the benchmark accessible to researchers with varying resources.
           </p>
               
               <!-- <p class="home__desc" style="clear: left;">
@@ -112,6 +121,51 @@
           </div>
         </div>
       </section>
+
+      <!-- Security  -->
+      <section class="section container" id="faqs">
+        <div class="security grid" style="padding-top:10rem;padding-bottom:14rem">
+            
+   
+      
+          <div class="security__data">
+              
+            <h2 class="faq__title" style="padding-bottom:1rem">
+              FAQ <br />
+
+            </h2>
+            <p class="security__desc">
+                <p  class="security__desc" style="padding-bottom:1rem;">
+                <b> Can I include a piece of data more than once in training? </b> <br > 
+                Yes! For the DCLM-filtering track you can do this by simply including a document multiple times
+                </p>
+
+                <p class="security__desc">
+                  <p  class="security__desc" style="padding-bottom:1rem;">
+                  <b> Can I change the HTML Extraction method </b> <br > Yes! But if you want to participate in the filtering track please use the exact same WARC files as used in DCLMPool 
+                  </p>
+                
+                <p class="security__desc">
+                    <p  class="security__desc" style="padding-bottom:1rem;">
+                    <b> Can we use the same filtering algorithm to enter multiple tracks/scales? </b> <br > Yes! We encourage participation in both tracks and multiple scales. 
+                    </p>
+                
+            <p class="security__desc">
+                <p  class="security__desc" style="padding-bottom:1rem;">
+                <b> Is any data forbidden from use in the Mixing Track? </b> <br > The only data that is explicitly forbidden is the test documents from the evaluation tasks and data that cannot be released publicly. However, we additionally require that external data meets our own safety standards and may be excluded if it does not.
+                </p>
+                
+                    
+                
+            </p>
+          </div>
+          
+          <div>
+        <img align="right"  width="100%" src="../assets/images/svgs/book.svg">
+        </div>
+
+      </div>
+    </section>
       
       
       <div align="center" style="padding-bottom:1rem;padding-top:14rem;">
